@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <wsa:To>http://localhost:9999/sc62server/PWS</wsa:To>
+        <wsa:MessageID>urn:uuid:22A944DCAB4AC5ABBE1437477972032</wsa:MessageID>
+        <wsa:Action>Create</wsa:Action>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns2:CreateEventinRequest attachmentInfo="false" attachmentData="false" ignoreEmptyElements="false" xmlns:ns2="http://servicecenter.peregrine.com/PWS">
+            <ns2:model>
+                <ns2:keys/>
+                <ns2:instance>
+                    <ns2:evtype type="type" mandatory="false" readonly="false">hpsapepmu</ns2:evtype>
+                    <ns2:evsysseq type="type" mandatory="false" readonly="false">8367C67BD3DA477</ns2:evsysseq>
+                    <ns2:evuser type="type" mandatory="false" readonly="false">ovictex</ns2:evuser>
+                    <ns2:evfields type="type" mandatory="false" readonly="false">IM10145^Requester:ProviderProcessing^8000001023^false^Created incident in External Helpdesk :SAP Solution Manager. Incident Id at External Helpdesk is 8000001023. External Helpdesk is now processing the incident IM10145</ns2:evfields>
+                </ns2:instance>
+            </ns2:model>
+        </ns2:CreateEventinRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
